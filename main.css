@@ -4,7 +4,7 @@
   
   body {
     margin: 0;
-    background: linear-gradient(180deg, #e6c11c, #38d88d, #563656, #c766ee);
+    background: linear-gradient(200deg, #ffa500, #38d88d,#ff0000, #38d88d, #800080);
     height: 100%;
     display: flex;
     align-items: center;
