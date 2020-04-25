@@ -13,8 +13,9 @@
   }
   .container {
     display: flex;
-    position: relative;
-    width: 80vw;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
   }
@@ -23,83 +24,14 @@
       .container {
           flex-direction: column;
           position: relative;
-          width: 80vw;
+          width: 90vw;
+          margin: auto;
           /* justify-content: space-around; */
           align-items: center;
       }
-      .container .card {
-          width: 80%;
-        }
+
   }
-  
-  .container .card {
-    position: relative;
-    width: 30%;
-    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  
-  .container .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  }
-  
-  .container .card:before {
-    content: "";
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: -50%;
-    pointer-events: none;
-    z-index: 1;
-  }
-  
-  .percent {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
-    box-shadow: inset 0 0 50px #000;
-    background: #222;
-    border-radius: 50%;
-    z-index: 1000;
-  }
-  
-  .percent .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
-  
-  .percent .number h2 {
-    color: #777;
-    font-weight: 700;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  
-  .card:hover .percent .number h2 {
-    font-size: 40px;
-    color: #ccc;
-  }
-  
-  .percent .number h2 span {
-    font-size: 24px;
-  }
+
   
   .text {
     color: #777;
@@ -117,7 +49,7 @@
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   h3 {
-    font-family: cur;
+    font-family: cursive;
   }
   .pro {
     text-decoration: underline;
@@ -126,7 +58,7 @@
       padding: 10rem 1rem;
       text-align: center;
       margin: auto;
-      width: 100%;
+      width: 80%;
   }
 
   ol {
@@ -141,4 +73,10 @@
   p {
       font-weight: 500;
       font-size: large;
+  }
+
+  .imgS {
+    width: 90vw;
+    margin: auto;
+    text-align: center;
   }
